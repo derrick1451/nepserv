@@ -1,11 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-body  {
-  height: 100vh;
-}
-# {
+html {
   height: 100%;
+}
+
+body {
+  height: inherit;
+  font-size: 16px;
+}
+
+#root {
+  height: 100%;
+  padding: 0.5rem;
+  border: 1px solid red;
 }

@@ -1,8 +1,14 @@
-
+import NavBar from './components/NavBar';
+import React from 'react';
 import './App.css';
+
+
 const App = ()=> {
   return (
-    <h1>simple we template</h1>
+    <>
+      <NavBar/>
+    </>
+   
   )
 }
 
