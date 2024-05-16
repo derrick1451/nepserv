@@ -1,11 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 html {
   height: 100%;
@@ -13,11 +13,29 @@ html {
 
 body {
   height: inherit;
-  font-size: 16px;
 }
 
 #root {
   height: 100%;
-  padding: 0.5rem;
-  border: 1px solid red;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #c2e8fc;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(26, 24, 24);
+}
+
+.humberger {
+  width: 35px;
+  height: auto;
 }
