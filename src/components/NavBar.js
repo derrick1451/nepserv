@@ -1,21 +1,10 @@
 import React from 'react';
-import humberger from 'images/Menu.png'
+import humberger from '../assets/images/Menu.png'
 
 const NavBar = () => (
   <header>
-    <a href='#'></a>
-    {/* <nav>
-      <ul>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#'>About</a></li>
-        <li><a href='#'>Contact</a></li>
-        <li><a href='#'>Blog</a></li>
-        <li><a href='#'>Shop</a></li>
-      </ul>
-    </nav> */}
-    <img src={humberger} alt="humberger" />
-    
-  
+    <a className='logo' href='#'>Logo</a>
+    <img className='humberger' src={humberger} alt='humberger' />
   </header>
 );
 
