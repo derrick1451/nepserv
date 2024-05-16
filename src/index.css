@@ -39,3 +39,36 @@ header {
   width: 35px;
   height: auto;
 }
+
+main {
+  background-color: gainsboro;
+  /* background: url(./assets/images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: #1D2B53;
+}
+.container h1 {
+  font-size: 2rem;
+  line-height: 1.6
+}
+.container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.btn button {
+  border: none;
+  border: 1px solid #EEF5FF;
+  font-size: 1.5rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #1D2B53;
+  background-color: gainsboro;
+
+}
