@@ -4,6 +4,8 @@ import currency from "../assets/images/image-currency.jpg";
 import confeti from "../assets/images/image-confetti.jpg";
 import ticket from "../assets/images/ticket.png";
 import project from "../assets/images/prop.jpg";
+import React from 'react';
+
 const ServiceSection = () => {
   return (
     <section className="s-section">
