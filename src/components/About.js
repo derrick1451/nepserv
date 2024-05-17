@@ -41,9 +41,7 @@ const About = () => {
           <div className="card">
             <SiSecurityscorecard className="icon"/>
             <h3>Core Values</h3>
-            <span>People</span>
-            <span>Innovation</span>
-            <span>Excellence</span>
+            <p>Creating technology for everyday use.</p>
           </div>
         </div>
       </div>

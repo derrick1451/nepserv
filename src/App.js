@@ -4,6 +4,7 @@ import ServiceSection from './components/ServiceSection';
 import About from './components/About';
 import Partners from './components/Partners';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 import React from 'react';
 import './App.css';
 
@@ -17,6 +18,7 @@ const App = ()=> {
       <About/>
       <Partners/>
       <Contacts/>
+      <Footer/>
     </>
    
   )

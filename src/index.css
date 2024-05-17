@@ -19,19 +19,26 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 a {
   text-decoration: none;
+  color: initial;
+}
+li {
+  list-style: none;
+}
+.nav-bar {
+  display: none;
 }
 
 header {
-  background-color: #c2e8fc;
+  background-color: #202429;
   padding: 0.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 .logo img {
   width: 3.5rem;
@@ -42,20 +49,20 @@ header {
   height: auto;
   cursor: pointer;
 }
+/* hero section */
 
 main {
-  background-color: #fff;
-  /* background: url(./assets/images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg); */
+  background-color: gainsboro;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10rem 2rem;
   border-bottom: 1px solid #2b2020;
+  border-bottom-right-radius: 60px;
 }
 .container {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  color: #1d2b53;
 }
 .container h1 {
   font-size: 2rem;
@@ -89,7 +96,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   background-color: #fff;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .service-section h2 {
   text-align: center;
@@ -268,11 +275,14 @@ form {
   gap: 1.5rem;
   width: 100%;
 }
-input, textarea {
-  border: 1px solid #CCCCCC;
+input,
+textarea {
+  border: 1px solid #cccccc;
   padding: 0.8rem;
   font-size: 1rem;
   width: 100%;
+  border-radius: 8px;
+  outline: none;
 }
 form button {
   border: none;
@@ -282,4 +292,109 @@ form button {
   cursor: pointer;
   background-color: gainsboro;
   color: #1d2b53;
+}
+/* footer section */
+.footer-section {
+  background-color: #24262b;
+  padding: 1rem 1rem 0 1rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  align-items: center;
+  text-align: center;
+}
+.react-icon {
+  font-size: 30px;
+  color: #fff;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.4rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.4rem;
+}
+.footer-links a {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.footer-container p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: black;
+  width: 100vw;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .humberger {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+    padding: 1rem;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    padding: 0.6rem;
+  }
+  .nav-links a {
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 0.6rem;
+  }
+
+  .container {
+    padding: 150px;
+  }
+  .container h1 {
+    font-size: 3rem;
+  }
+  /* services section */
+  .items {
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    gap: 2rem
+  }
+  .trial img {
+    width: 100%;
+    height: auto;
+  }
+  /* About us */
+  .about-us-info p {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .card-container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  /* contact section */
+  .contact-container {
+    flex-direction: row;
+    padding: 100px 1rem;
+
+  }
+  .footer-links {
+    flex-direction: row;
+  }
+  input,
+  textarea {
+    width: 85%;
+  }
 }
