@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import ServiceSection from './components/ServiceSection';
 import About from './components/About';
 import Partners from './components/Partners';
+import Contacts from './components/Contacts';
 import React from 'react';
 import './App.css';
 
@@ -15,6 +16,7 @@ const App = ()=> {
       <ServiceSection/>
       <About/>
       <Partners/>
+      <Contacts/>
     </>
    
   )
