@@ -7,7 +7,10 @@ const About = () => {
     <section className="about-section">
       <div className="about-container">
         <div className="about-us-info">
-          <h2>About Us</h2>
+         <div className="p-info">
+            <h2>About Us</h2>
+            <div class="line"></div>
+            </div>
           <p>
             Nepserv Consults Limited is an SPV (Special Purpose Vehicle) entity
             in Uganda, serving the Ugandan financial market but tailored to serve
