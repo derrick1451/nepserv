@@ -4,7 +4,7 @@ import { ImBinoculars } from "react-icons/im";
 import { SiSecurityscorecard } from "react-icons/si";
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-us-info">
          <div className="p-info">
@@ -23,9 +23,9 @@ const About = () => {
             that are capable of solving real world problems, improvement of
             service delivery and promotion of value.
           </p>
-          <div>
-            <button>Contact Us</button>
-          </div>
+          <div className="btn"><a href='#contact'>
+            Contact us
+           </a></div>
         </div>
 
         <div className="card-container">

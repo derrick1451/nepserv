@@ -7,7 +7,7 @@ import project from "../assets/images/prop.jpg";
 import React from "react";
 const ServiceSection = () => {
   return (
-    <section className="s-section">
+    <section id="services" className="s-section">
       <div className="service-section">
         <h2>Our Services</h2>
         <div className="service-container">

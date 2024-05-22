@@ -22,7 +22,7 @@ const Contacts = () => {
         // Add your form submission logic here
       };
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <div className="contact-container">
         <p>
           We are  always interested in hearing about your feedback, so if you'd like

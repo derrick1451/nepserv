@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
@@ -14,6 +13,7 @@ html {
 
 body {
   height: 100%;
+  background: #F9F9FB;
 }
 
 #root {
@@ -35,7 +35,7 @@ li {
 }
 
 header {
-  background: hsla(0,0%,100%,.56);
+  background: linear-gradient(270deg,#1f82c3,#f0eded);
   position: absolute;
   z-index: 2;
   padding: 0.7rem;
@@ -45,7 +45,6 @@ header {
   gap: 1.5rem;
   position: fixed;
   width: 100%;
-  color: #1f82c3;
 }
 
 /* pop-up menu */
@@ -57,8 +56,6 @@ header {
   position: absolute;
   width: 100%;
   background-color:hsla(0,0%,100%,.56);
-  top: 0;
-  right: 0;
   height: 50vh;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(8px);
@@ -67,6 +64,8 @@ header {
 .pop-up.show {
   display: flex;
   opacity: 1;
+  right: 0;
+  top: 0;
 }
 .pop-up ul {
   display: flex;
@@ -90,22 +89,23 @@ header {
 
 
 .logo img {
-  width: 3.5rem;
+  width: 8rem;
 }
 
 .humberger {
   width: 35px;
   height: auto;
   cursor: pointer;
+  color: #fff;
 }
 /* hero section */
 
 main {
-  background-color: gainsboro;
+  background: linear-gradient(270deg,#fff 0,#1f82c3);
   background: url(./assets/images/linkedin-sales-solutions-VtKoSy_XzNU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 2rem 6rem 2rem;
+  padding: 9rem 2rem 6rem 2rem;
 }
 .container {
   display: flex;
@@ -113,12 +113,11 @@ main {
   gap: 0.7rem;
 }
 .container h1 {
-  font-size: 2rem;
-  line-height: 1.6;
-  color: #1f82c3;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 .container p {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 1.5;
 }
 button {
@@ -130,6 +129,7 @@ button {
   color: #fff;
   background-color: #36B37E;
   outline: none;
+  transition: all .5s ease-out;
 }
 button:hover {
   background-color: #27815c;
@@ -139,14 +139,24 @@ button:active {
   background-color: #008552;
   color: #fff;
 }
-.btn button {
+.btn {
+  margin-top: 1.5rem;
+}
+.btn a {
   border: none;
   font-size: 1.5rem;
-  padding: 0.4rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #36B37E;
+  outline: none;
+  transition: all .5s ease-out;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
 }
 .s-section {
-  /* background-color: #f1efef; */
   padding: 0.8rem;
+  background: #F9F9FB;
 }
 
 .trial img {
@@ -157,8 +167,8 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: #fff;
   margin-top: 2rem;
+  margin-bottom:2rem;
 }
 .service-section h2 {
   text-align: center;
@@ -179,6 +189,7 @@ button:active {
   border: 1px solid gainsboro;
   padding: 0.5rem;
   border-radius: 10px;
+  background-color: #fff;
 }
 .items h3 {
   margin: 14px 0;
@@ -207,10 +218,10 @@ button:active {
 }
 /* About section */
 .about-section {
-  background-color: #fff;
-  margin-top: 3rem;
+  background-color: #fff; 
   text-align: center;
   padding: 1rem;
+  padding-top: 5rem;
 }
 .about-container {
   display: flex;
@@ -249,7 +260,6 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
   padding: 1rem;
 }
 .card {
@@ -262,6 +272,12 @@ button:active {
   background-color: rgb(238, 228, 228);
   padding: 1rem;
   border-radius: 14px;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  background-color: #fff;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .card .icon {
@@ -283,8 +299,8 @@ button:active {
   flex-direction: column;
   padding: 1rem;
   gap: 2rem;
-  /* background-color: #272a32; */
   text-align: center;
+  background: linear-gradient(270deg,#fff 0,#1f82c3);
 }
 .partner-container {
   display: flex;
@@ -318,6 +334,7 @@ label {
 .contact-section {
   margin-top: 1rem;
   padding: 1rem;
+  background: #F9F9FB;
 }
 .contact-container {
   display: flex;
@@ -397,7 +414,7 @@ form button {
   line-height: 1.5;
   color: #fff;
   background-color: black;
-   width: 100%;
+  width: 100%;
   padding: 1rem;
 }
 @media (min-width: 768px) {
@@ -413,19 +430,28 @@ form button {
     display: flex;
     gap: 2rem;
     padding: 0.6rem;
+    align-items: center;
   }
   .nav-links a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 800;
-    color: #1f82c3;;
-    padding: 0.6rem;
+    color: #fff;
+    padding: 0.4rem;
+    transition: all .5s ease-out;
+    
+  }
+  .nav-links a:hover {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #fff;
+    
   }
 
   .container {
     padding: 150px;
   }
   .container h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 900;
   }
   /* services section */
    .service-container {
@@ -443,6 +469,13 @@ form button {
     height: 100%;
     padding: 0.5rem;
     object-fit: cover;
+    border-radius: 14px;
+    transition: all 0.5s ease-in;
+  }
+  .trial img:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    cursor: pointer;
   }
 
   /* About us */

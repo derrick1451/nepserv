@@ -5,7 +5,7 @@ const Footer = ()=>{
         <footer className="footer-section">
             <div className="footer-container">
                 <div className="links">
-                    <a href="#"><FaFacebook className='react-icon'/></a>
+                    <a href=""><FaFacebook className='react-icon'/></a>
                     <a href=""><FaInstagram className='react-icon'/></a>
                     <a href=""><FaTwitter className='react-icon'/></a>
                     <a href=""><FaGooglePlusG className='react-icon'/></a>

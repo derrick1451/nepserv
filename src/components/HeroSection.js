@@ -2,17 +2,17 @@ import React from 'react';
 
 const HeroSection = ()=>{
     return (
-        <main>
+        <main id='home'>
             <div className="container">
            <h1>
             Leading the way in customer insights
            </h1>
            <p>
-            Experience support without limits
+            Experience unlimited support without limits
            </p>
-           <div className="btn"><button>
+           <div className="btn"><a href='#contact'>
             Contact us
-           </button></div>
+           </a></div>
             </div>
         </main>
     )

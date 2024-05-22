@@ -6,7 +6,7 @@ import service from "../assets/images/ServiceCops.png"
 import housing from "../assets/images/hfb-bank.png"
 const Partner = ()=>{
     return(
-        <section className="partner-section">
+        <section id='partners' className="partner-section" >
             <div className="p-info">
             <h2>Partners</h2>
             <div class="line"></div>
