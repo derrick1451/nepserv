@@ -12,6 +12,7 @@ import './App.css';
 const App = ()=> {
   return (
     <>
+       
       <NavBar/>
       <HeroSection/>
       <ServiceSection/>
@@ -19,6 +20,7 @@ const App = ()=> {
       <Partners/>
       <Contacts/>
       <Footer/>
+  
     </>
    
   )
