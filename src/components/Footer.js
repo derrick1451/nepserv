@@ -20,7 +20,7 @@ const Footer = ()=>{
             <li><a href="#">Support</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
-          <p>© 2024 Angage. All rights reserved.</p>
+         <div className="footer-p"> <p>© 2024 Angage. All rights reserved.</p></div>
             </div>
         </footer>
     )
