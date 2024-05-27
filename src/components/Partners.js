@@ -7,7 +7,7 @@ import housing from "../assets/images/hfb-bank.png"
 const Partner = ()=>{
     return(
         <section id='partners' className="partner-section" >
-            <div className="p-info">
+            <div className="p-infoz">
             <h2>Partners</h2>
             <div class="line"></div>
             </div>

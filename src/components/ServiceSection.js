@@ -28,7 +28,16 @@ const ServiceSection = () => {
         </div>
 
         <div className="featured-cards">
-          <div className="f-card confetti">
+          <div className="f-card element">
+            <h3>Robust sales management</h3>
+            <p>
+              Better track prospects, targets, field activity through a fully
+              built sales management module
+            </p>
+            <button>See More</button>
+          </div>
+
+          <div className="f-card element">
             <h3>Robust sales management</h3>
             <p>
               Better track prospects, targets, field activity through a fully
@@ -38,15 +47,6 @@ const ServiceSection = () => {
           </div>
 
           <div className="f-card element overlay">
-            <h3>Robust sales management</h3>
-            <p>
-              Better track prospects, targets, field activity through a fully
-              built sales management module
-            </p>
-            <button>See More</button>
-          </div>
-
-          <div className="f-card drag overlay">
             <h3>Ticket Management</h3>
             <p>
               Manage all company and product related issues and tickets from one
@@ -55,7 +55,7 @@ const ServiceSection = () => {
             <button>See More</button>
           </div>
 
-          <div className="f-card d-flex overlay">
+          <div className="f-card element overlay">
             <h3>Streamlined Data processing</h3>
             <p>
               Save time, money while improving efficiency of operations through
@@ -65,7 +65,7 @@ const ServiceSection = () => {
             <button>See More</button>
           </div>
 
-          <div className="f-card bg overlay">
+          <div className="f-card element overlay">
             <h3>Project Management & Product Development</h3>
             <p>
               Track the performance of all your projects, tasks and sub tasks
@@ -76,7 +76,7 @@ const ServiceSection = () => {
             <button>See More</button>
           </div>
 
-          <div className="f-card confetti">
+          <div className="f-card element">
             <h3>System Uptime monitoring</h3>
             <p>
               The easiest way to monitor system’s availability so as to serve

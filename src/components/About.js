@@ -2,6 +2,7 @@ import React from "react";
 import { BsRocketTakeoff } from "react-icons/bs";
 import { ImBinoculars } from "react-icons/im";
 import { SiSecurityscorecard } from "react-icons/si";
+import frame from '../assets/images/Frame.png'
 const About = () => {
   return (
     <section id="about" className="about-section">
@@ -11,7 +12,9 @@ const About = () => {
             <h2>About Us</h2>
             <div class="line"></div>
             </div>
-          <p>
+            <div className="about-test">
+              <div className="about-notes">
+              <p>
             Nepserv Consults Limited is an SPV (Special Purpose Vehicle) entity
             in Uganda, serving the Ugandan financial market but tailored to serve
             the global market as well. This Entity was formed through a joint
@@ -26,9 +29,17 @@ const About = () => {
           <div className="btn"><a href='#contact'>
             Contact us
            </a></div>
+
+              </div>
+           
+           <div className="bg-img">
+            <img src={frame} alt="frame"/>
+           </div>
+            </div>
+
         </div>
 
-        <div className="card-container">
+        {/* <div className="card-container">
           <div className="card">
             <BsRocketTakeoff className="icon"/>
             <h3>Our Mission</h3>
@@ -46,7 +57,7 @@ const About = () => {
             <h3>Core Values</h3>
             <p>Creating technology for everyday use.</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

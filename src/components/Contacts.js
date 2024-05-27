@@ -20,6 +20,11 @@ const Contacts = () => {
         e.preventDefault();
         console.log('Form Data Submitted:', formData);
         // Add your form submission logic here
+        setFormData({
+          name: '',
+          email: '',
+          comments: ''
+        });
       };
   return (
     <section id="contact" className="contact-section">
