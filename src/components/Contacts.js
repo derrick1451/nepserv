@@ -69,7 +69,7 @@ const Contacts = () => {
           required
         />
       </div>
-      <div> <button type="submit">Get In Touch</button></div>
+      <div> <button onClick={handleSubmit} type="submit">Get In Touch</button></div>
      
     </form>
       </div>
