@@ -8,11 +8,13 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
 }
 
 body {
   height: 100%;
-  background: gainsboro;
+  background: #fffffff8;
 }
 
 #root {
@@ -58,11 +60,10 @@ header {
   height: 50vh;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(8px);
-  transition: opacity 0.5s ease-in-out;
+  transition: all 0.8s ease-in;
 }
 .pop-up.show {
   display: flex;
-  opacity: 1;
   right: 0;
   top: 0;
 }
@@ -115,11 +116,34 @@ main {
   flex-direction: column;
   gap: 0.7rem;
   color: #fff;
+  overflow: hidden;
 }
 .container h1 {
   font-size: 2.5rem;
   line-height: 1.5;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
 .container p {
   font-size: 1.9rem;
   line-height: 1.5;
@@ -128,7 +152,7 @@ main {
 /* services section */
 .featured-section {
   padding: 0.5rem;
-  background-color: gainsboro;
+  background-color: #fffffff8;
   margin-top: 3.5rem;
 }
 .featured-container {
@@ -241,9 +265,16 @@ main {
 
 /* About section */
 .about-section {
-  background-color: #262626;
-  padding: 0.5rem;
-  padding-top: 5rem;
+  background-image: url(./assets/images/about.jpg);
+  border-image: linear-gradient(
+      hsla(210, 59%, 47%, 0.6),
+      hsla(210, 22%, 30%, 0.8)
+    )
+    fill 1;
+  background-size: cover;
+  /* padding: 0.5rem;
+  padding-top: 5rem; */
+  padding: 5rem 0.5rem;
 }
 .bg-img {
   display: none;
@@ -384,12 +415,12 @@ label {
 .contact-section {
   padding: 1rem;
   background: #f9f9fb;
-  background-image: url(./assets/images/bg-intro-desktop.svg);
-  background-size: contain;
+  background-image: url(./assets/images/mobile.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   border-image: linear-gradient(
-      hsla(210, 63%, 36%, 0.6),
-      hsla(210, 22%, 30%, 0.8)
+      hsla(210, 52%, 47%, 0.6),
+      hsla(209, 46%, 50%, 0.8)
     )
     fill 1;
 }
@@ -556,6 +587,12 @@ form button {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
+    transition: all 0.7s linear;
+  }
+  .f-card:hover {
+    box-shadow: rgba(87, 91, 95, 0.4) 5px 5px;
+      cursor: pointer;
+      transform: scale(.9);
   }
   .f-card h3 {
     font-size: 32px;
@@ -581,23 +618,27 @@ form button {
   .about-test {
     display: flex;
     padding: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .bg-img {
     flex: 2;
   }
-  .p-info {
-    justify-content: flex-start;
-    width: 30%;
-  }
+
   .p-info h2 {
     font-size: 2.3rem;
+  }
+  .about-notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-notes p {
     flex: 1;
-    width: 90%;
+    width: 60%;
   }
 
   .p-infoz {
@@ -676,5 +717,4 @@ form button {
     font-size: 1.3rem;
     border-bottom: 1px solid #fff;
   }
-
 }
