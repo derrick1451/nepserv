@@ -29,12 +29,8 @@ const About = () => {
           <div className="btn"><a href='#contact'>
             Contact us
            </a></div>
-
               </div>
            
-           <div className="bg-img">
-            <img src={frame} alt="frame"/>
-           </div>
             </div>
 
         </div>
