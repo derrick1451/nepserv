@@ -14,7 +14,7 @@ html {
 
 body {
   height: 100%;
-  background: #fffffff8;
+  background:  hsl(220, 16%, 96%)
 }
 
 #root {
@@ -130,11 +130,11 @@ main {
     margin-left: 100%;
     width: 300%;
   }
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
+  /* 75% {
+    font-size: 4rem;
+    margin-left: 50%;
     width: 150%;
-  }
+  } */
 
   to {
     margin-left: 0%;
@@ -142,18 +142,17 @@ main {
   }
 }
 
-
-
 .container p {
   font-size: 1.9rem;
-  line-height: 1.5;
+  line-height: 1.5;;
 }
 
 /* services section */
 .featured-section {
   padding: 0.5rem;
-  background-color: #fffffff8;
   margin-top: 3.5rem;
+  background:  hsl(220, 16%, 96%)
+
 }
 .featured-container {
   display: flex;
@@ -168,6 +167,7 @@ main {
   height: 2px;
   background-color: #4e4c4c;
 }
+
 .featured-text {
   display: flex;
   flex-direction: column;
@@ -178,10 +178,25 @@ main {
   font-weight: 900;
   color: #1f82c3;
 }
+/* .featured-img {
+  border: 1px solid rgb(20, 0, 0);
+  padding: .3rem;
+  border-radius: 6px;
+} */
 
 .featured-img img {
   width: 100%;
+  border: 2px solid hsl(228, 3%, 68%);
+  padding: .1rem;
+  border-radius: 10px;
+  transition: all 0.5s linear;
 }
+.featured-img img:hover {
+  box-shadow: rgba(87, 91, 95, 0.4) 5px 5px;
+  cursor: pointer;
+  transform: scale(.9)
+}
+
 .featured-work {
   display: flex;
   flex-direction: column;
@@ -193,21 +208,21 @@ main {
   flex-direction: column;
 }
 .featured-info h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #091e42;
   line-height: 44px;
 }
 .featured-info p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
 }
 .featured-btn button {
   border: none;
   font-size: 1.1rem;
   padding: 10px 20px;
-  background-color: #36b37e;
+  background-color:#1f82c3;
   color: #fff;
   border-radius: 7px;
   cursor: pointer;
@@ -224,43 +239,102 @@ main {
   padding-top: 150px;
   display: flex;
   flex-direction: column;
-  color: #fff;
-  background-image: url(./assets/images/image-confetti.jpg);
-  background-size: cover;
-  border-image: linear-gradient(
-      hsla(219, 78%, 11%, 0.6),
-      hsla(212, 90%, 49%, 0.8)
-    )
-    fill 1;
+  transition: all 0.5s linear;
+  color: hsl(220, 16%, 96%);
+  border-radius: 10px;
 }
+.f-card:hover {
+  box-shadow: rgba(87, 91, 95, 0.4) 5px 5px;
+    cursor: pointer;
+    transform: translateY(-10px)
+}
+
+/* Background images for cards */
+.system {
+  background-image: url(./assets/images/last-pixel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+    hsla(210, 42%, 60%, 0.6),
+    hsla(210, 22%, 30%, 0.8)
+  )
+  fill 1;
+}
+.computer {
+  background-image: url(./assets/images/comms.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+    hsla(69, 80%, 46%, 0.6),
+    hsla(210, 22%, 30%, 0.8)
+  )
+  fill 1;
+  
+}
+.drip {
+  background-image: url(./assets/images/drip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+    hsla(342, 55%, 59%, 0.6),
+    hsla(210, 22%, 30%, 0.8)
+  )
+  fill 1;
+}
+.amini {
+  background-image: url(./assets/images/amini.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  border-image: linear-gradient(
+    hsla(69, 80%, 46%, 0.6),
+    hsla(210, 22%, 30%, 0.8)
+  )
+  fill 1;
+}
+.jay {
+  background-image: url(./assets/images/pixel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  border-image: linear-gradient(
+    hsla(210, 25%, 49%, 0.6),
+    hsla(210, 22%, 30%, 0.8)
+  )
+  fill 1;
+}
+.clay {
+  background-image: url(./assets/images/clay-banks-tgquMvhNLc4-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+    hsla(73, 79%, 38%, 0.6),
+    hsla(88, 31%, 18%, 0.8)
+  )
+  fill 1;
+
+}
+
 .f-card h3 {
   font-size: 32px;
   padding: 0 1rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 44px;
 }
+
 .f-card p {
   font-size: 17px;
   line-height: 24px;
   padding: 0 1rem;
+  font-weight: 300;
 }
 .f-card button {
   margin-top: auto;
   border: none;
   padding: 1rem;
-  background-color: #36b37e;
+  background-color: #1f82c3;
   cursor: pointer;
   color: #fff;
-}
-
-.confetti {
-  background-image: url(./assets/images/linkedin-sales-solutions-VtKoSy_XzNU-unsplash.jpg);
-  background-size: cover;
-  border-image: linear-gradient(
-      hsla(210, 25%, 49%, 0.6),
-      hsla(210, 22%, 30%, 0.8)
-    )
-    fill 1;
 }
 
 /* About section */
@@ -323,7 +397,7 @@ main {
   cursor: pointer;
   border-radius: 8px;
   color: #fff;
-  background-color: #36b37e;
+  background-color: #1f82c3;
   outline: none;
   transition: all 0.5s ease-out;
   font-size: 1.5rem;
@@ -352,6 +426,7 @@ main {
   background-color: #fff;
   cursor: pointer;
   transform: scale(1.1);
+  transform: translateY(-7px);
 }
 
 .card .icon {
@@ -546,7 +621,8 @@ form button {
   }
 
   .container {
-    padding: 150px;
+    padding: 100px;
+    margin: 0 auto;
   }
   .container h1 {
     font-size: 3.5rem;
@@ -567,13 +643,14 @@ form button {
 
   .featured-img img {
     max-width: 100%;
-    flex: 2;
+    flex: 1;
   }
   .featured-work {
     flex-direction: row;
   }
   .featured-info {
-    flex: 1;
+    flex: 2;
+  
   }
 
   .featured-cards {
@@ -587,17 +664,16 @@ form button {
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    transition: all 0.7s linear;
+    transition: all 0.5s linear;
   }
   .f-card:hover {
     box-shadow: rgba(87, 91, 95, 0.4) 5px 5px;
       cursor: pointer;
-      transform: scale(.9);
+      transform: translateY(-10px)
   }
   .f-card h3 {
     font-size: 32px;
     padding: 0 1rem;
-    font-weight: 400;
     line-height: 44px;
   }
   .f-card p {
@@ -609,10 +685,20 @@ form button {
     margin-top: auto;
     border: none;
     padding: 1rem;
-    background-color: #36b37e;
+    background-color: #1f82c3;
     cursor: pointer;
     color: #fff;
   }
+  /* .board {
+    margin-top: auto;
+    border: none;
+    padding: 1rem;
+    background-color: #1f82c3;
+    cursor: pointer;
+    height: 20%;
+    color: #fff;
+
+  } */
 
   /* About us */
   .about-test {
