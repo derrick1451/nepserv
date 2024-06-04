@@ -35,7 +35,6 @@ const ServiceSection = () => {
               designed to improve efficiency of operations for players in the
               Micro Finance Industry..
             </p>
-            <div className="board"></div>
           </div>
 
           <div className="f-card jay">
