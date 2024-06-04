@@ -37,7 +37,6 @@ li {
 
 header {
   background: linear-gradient(270deg, #1f82c3, #f0eded);
-  position: absolute;
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -404,6 +403,10 @@ main {
   padding: 0.6rem 1rem;
 }
 
+.btn a:hover {
+  background: #0d66a1;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -441,7 +444,8 @@ main {
 
 .partner-img {
   width: 120px;
-  height: auto;
+  height:90px;
+  object-fit: scale-down;
 }
 .partner-section {
   display: flex;
@@ -456,7 +460,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 3rem;
 }
 .line {
@@ -537,7 +541,7 @@ form button {
   font-size: 1.4rem;
   border-radius: 10px;
   cursor: pointer;
-  background-color: #36b37e;
+  background-color: #1f82c3;
   color: #fff;
 }
 /* footer section */
@@ -667,7 +671,7 @@ form button {
     transition: all 0.5s linear;
   }
   .f-card:hover {
-    box-shadow: rgba(87, 91, 95, 0.4) 5px 5px;
+    box-shadow: rgba(16, 53, 56, 0.4) 5px 5px;
       cursor: pointer;
       transform: translateY(-10px)
   }
@@ -676,6 +680,7 @@ form button {
     padding: 0 1rem;
     line-height: 44px;
   }
+  
   .f-card p {
     font-size: 17px;
     line-height: 24px;
