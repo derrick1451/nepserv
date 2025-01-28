@@ -6,4 +6,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### 
 
-This section has moved here: [https://facebook.github.io/creat
+This section has moved here: [https://facebook.github
+
